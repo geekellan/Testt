@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A017E7625275F280053EDE3 /* Notice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A017E7525275F280053EDE3 /* Notice.swift */; };
+		7A017E7925275F640053EDE3 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A017E7825275F640053EDE3 /* Move.swift */; };
 		7AB6E8EE2526D0BB001E77A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6E8ED2526D0BB001E77A0 /* AppDelegate.swift */; };
 		7AB6E8F02526D0BB001E77A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6E8EF2526D0BB001E77A0 /* SceneDelegate.swift */; };
 		7AB6E8F22526D0BB001E77A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6E8F12526D0BB001E77A0 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A017E7525275F280053EDE3 /* Notice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notice.swift; sourceTree = "<group>"; };
+		7A017E7825275F640053EDE3 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		7AB6E8EA2526D0BB001E77A0 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB6E8ED2526D0BB001E77A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB6E8EF2526D0BB001E77A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				7AB6E9082526DFD9001E77A0 /* Event.swift */,
+				7A017E7525275F280053EDE3 /* Notice.swift */,
+				7A017E7825275F640053EDE3 /* Move.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A017E7625275F280053EDE3 /* Notice.swift in Sources */,
 				7AB6E9092526DFD9001E77A0 /* Event.swift in Sources */,
 				7AB6E8F22526D0BB001E77A0 /* ViewController.swift in Sources */,
 				7AB6E8EE2526D0BB001E77A0 /* AppDelegate.swift in Sources */,
+				7A017E7925275F640053EDE3 /* Move.swift in Sources */,
 				7AB6E8F02526D0BB001E77A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
