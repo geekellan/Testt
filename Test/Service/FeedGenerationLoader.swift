@@ -66,6 +66,7 @@ struct FeedGenerationLoader: FeedLoader {
         let move = Move()
         move.fromPlace = generator.generateString()
         move.toPlace = generator.generateString()
+        move.estimateTime = generator.generateTimeinterval()
         return move
     }
     

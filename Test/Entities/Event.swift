@@ -20,8 +20,8 @@ extension Event: Presentable {
     
     var details: String {
         var str = "Name: \(name!)"
-        str += startTime != nil ? "StartTime \(string(from: startTime!))" : ""
-        str += endTime != nil ? "EndTime: \(string(from: endTime!))" : ""
+        str += startTime != nil ? "\nStartTime \(string(from: startTime!))" : ""
+        str += endTime != nil ? "\nEndTime: \(string(from: endTime!))" : ""
         return str
     }
 }

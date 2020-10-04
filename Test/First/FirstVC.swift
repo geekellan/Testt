@@ -49,7 +49,14 @@ class FirstVC: UIViewController {
 }
 
 extension FirstVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let entity = entities[indexPath.row]
+        present(SecondVC(entity: entity), animated: true, completion: nil)
+    }
 }
 
 extension FirstVC: UITableViewDataSource {
