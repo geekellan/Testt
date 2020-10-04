@@ -10,11 +10,17 @@ import UIKit
 class FirstVC: UIViewController {
     
     lazy var contentView = FirstContentView()
+    lazy var refresh: UIRefreshControl = {
+        let control = UIRefreshControl()
+        control.addTarget(self, action: #selector(load), for: .valueChanged)
+        return control
+    }()
     var loader: FeedLoader!
     
     var entities: [Presentable] = [] {
         didSet {
             DispatchQueue.main.async {
+                self.refresh.endRefreshing()
                 self.contentView.tableView.reloadData()
             }
         }
@@ -35,6 +41,7 @@ class FirstVC: UIViewController {
         load()
     }
     
+    @objc
     private func load() {
         loader.load { [weak self] entities in
             self?.entities = entities
@@ -42,6 +49,7 @@ class FirstVC: UIViewController {
     }
     
     private func setupContentView() {
+        contentView.tableView.refreshControl = refresh
         contentView.tableView.register(FirstCell.self, forCellReuseIdentifier: FirstCell.identifier)
         contentView.tableView.delegate = self
         contentView.tableView.dataSource = self
